@@ -1,0 +1,98 @@
+/* PricingSection.css */
+.jarvis__pricing {
+ text-align: center;
+ padding: 4rem;
+ margin-bottom: 4rem;
+ width: 100%;
+}
+
+.jarvis__pricing h1 {
+ margin-bottom: 2rem;
+ font-family: var(--font-family);
+   
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.jarvis__pricing-cards {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ 
+}
+
+.jarvis__pricing-card {
+ background: linear-gradient(90deg, rgb(96, 26, 124) 0%, rgba(14, 19, 60, 1) 36%);
+ border-radius: 20px;
+ padding: 2rem;
+ margin: 1rem;
+ width: 450px;
+ height: 300px;
+ box-shadow: 0 4px 6px 4px rgb(152, 185, 60);
+}
+
+.jarvis__pricing-card h3 {
+ margin-bottom: 1rem;
+ font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    letter-spacing: 0.04rem;
+}
+
+.jarvis__pricing-card p {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-family);
+  font-weight: 550;
+    font-size: 17px;
+    line-height: 40px;
+    color: var(--color-text);
+}
+
+.jarvis__pricing-card ul {
+ list-style: none;
+ padding: 0;
+}
+
+.jarvis__pricing-card ul li {
+ margin-bottom: 0.3rem;
+ font-family: var(--font-family);
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.jarvis__pricing-card button {
+ background-color: #007bff;
+ color: white;
+ border: none;
+ padding: 0.8rem 1rem;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 1.5rem;
+}
+
+.jarvis__pricing-card button:hover {
+ background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+ .jarvis__pricing-cards {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .jarvis__pricing-card {
+    width: 90%;
+    margin: 1rem 0;
+ }
+}
+
+@media screen and  (max-width: 480px) {
+ .jarvis__pricing-card {
+    width: 100%;
+ }
+}

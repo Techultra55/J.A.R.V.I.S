@@ -1,0 +1,102 @@
+.jarvis__introjrs{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    background: linear-gradient(90deg, rgba(18, 33, 56, 1) 0%, rgba(14, 19, 60, 1) 36%);
+}
+
+.jarvis__introjrs-features{
+    display: flex;
+}
+
+.jarvis__introjrs-features .jarvis__features-container__feature{
+    margin: 0;
+}
+
+.jarvis__introjrs-features .jarvis__features-container__feature-text{
+    max-width:700px;
+}
+
+.jarvis__introjrs-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+}
+
+.jarvis__introjrs-headings h1{
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 700;
+    max-width: 510px;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.jarvis__introjrs-headings p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.jarvis__introjrs-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.jarvis__introjrs-container .jarvis__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.jarvis__introjrs-container .jarvis__features-container__feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .jarvis__introjrs-headings {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .jarvis__introjrs-headings p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .jarvis__introjrs-feature .jarvis__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .jarvis__introjrs-feature .jarvis__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .jarvis__introjrs-headings h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .jarvis__introjrs-container .jarvis__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

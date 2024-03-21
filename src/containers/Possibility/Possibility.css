@@ -1,0 +1,84 @@
+.jarvis__possibility{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.jarvis__possibility-image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.jarvis__possibility-image img{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.jarvis__possibility-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 10rem;
+}
+
+.jarvis__possibility-content h4{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: aquamarine;
+}
+
+.jarvis__possibility-content h4:last-child{
+    color: var(--color-subtext);
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+.jarvis__possibility-content h1{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    margin: 1rem 0;
+}
+
+.jarvis__possibility-content p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 45px;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 950px) {
+    .jarvis__possibility {
+        flex-direction: column;
+    }
+
+    .jarvis__possibility-image {
+        margin: 1rem 0;
+    }
+
+    .jarvis__possibility-image img {
+        width: unset;
+        height: unset;
+    }
+
+    .jarvis__possibility-content {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .jarvis__possibility-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
